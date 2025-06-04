@@ -48,8 +48,8 @@ header nav>ul{
  
 .banner-pagina{
     height: 850px;
-    background:
-    linear-gradient(to right, rgba(28, 52, 51, 0.9), rgba(28, 52, 51, 0.4)),
+    background: 
+    linear-gradient(to right, rgba(28, 52, 51, 0.9), rgba(28, 52, 51, 0.4)), 
     url(../img/banner-pagina.jpg);
     background-size: cover;
     background-position: center;
@@ -274,6 +274,21 @@ header nav>ul{
     flex-direction: column;
     gap: 25px;
 }
+
+.livro .container-img-livro .fundo-colorido{
+    background-color: orangered;
+    width: 500px;
+    height: 400px;
+    margin-left: 100px;
+    border-radius: 15px;
+}
+
+.livro .container-img-livro .fundo-colorido>img{
+    width: 400px;
+    height: 500px;
+    margin-top: -100px;
+    margin-left: 50px;
+}
  
 .livro .descricao-livro .container-livro>h2{
     color: #e9763d;
@@ -300,8 +315,10 @@ header nav>ul{
     border-radius: 7px;
 }
  
-.livro .container-img-livro{
-    background-color: green;
+
+.livro .container-img-livro {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -455,6 +472,7 @@ header nav>ul{
 .blog .container-blog .titulo-blog > h2{
     margin-right: 20px;
     color: #000;
+    font-size: 30px;
 }
 
 .blog .container-blog .titulo-blog > p{
@@ -515,3 +533,148 @@ header nav>ul{
     display: flex;
     justify-content: center;
 }
+
+/* Pagina Sobre */
+
+.sobre{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.sobre .sobre-fred{
+    width: 100%;
+    height: 100%;
+}
+
+.sobre .container-img-sobre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sobre .container-img-sobre > img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-right: 50px;
+}
+
+.sobre .sobre-fred{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .sobre-fred .textos-sobre{
+    width: 700px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sobre .sobre-fred .textos-sobre>h2{
+    font-size: 30px;
+    color: #1C3433;
+}
+
+.sobre .sobre-fred .textos-sobre>h3{
+    color: #1C3433;
+}
+
+.sobre .sobre-fred .textos-sobre>p{
+    width: 550px;
+    color: #6B6A66;
+}
+
+.sobre .sobre-fred .textos-sobre>a{
+    text-decoration: none;
+    text-align: center;
+    width: 320px;
+    padding: 12px;
+    color: #53CC6C;
+    border: 1px solid #53CC6C;
+    border-radius: 7px;
+}
+
+.empresas{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.empresas .empresas-trabalho{
+    text-align: center;
+    align-items: center;
+    width: 700px;
+}
+
+.empresas .empresas-trabalho>h2{
+    font-size: 40px;
+}
+
+.empresas .empresas-trabalho>p{
+    font-size: 20px;
+    padding: 10px;
+    color: #6B6A66;
+}
+
+.empresas .empresas-trabalho>.icon-empresas{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.empresas .empresas-trabalho>.icon-empresas2{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+.pagina-InCompany{
+    height: 100vh;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagina-InCompany .container-InCompany{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    height: 700px;
+    width: 1400px;
+    background-color: yellow;
+}
+
+.pagina-InCompany .pg1{
+    background-color: green;
+    width: 50%;
+}
+
+.pagina-InCompany .descricao-company{
+    background-color: pink;
+}
+
+
+.pagina-InCompany .container-img-inCompany{
+    background-color: red;
+    width: 50%;
+}
+
+.pagina-InCompany .container-img-inCompany>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
