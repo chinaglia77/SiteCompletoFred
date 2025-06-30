@@ -9,94 +9,156 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <header class="header-pagina">
-        <img src="./img/logo-fred-junco.png" alt="logo do fred">
-
-        <nav class="navegacao">
-            <ul>
-                <li><a href="#">Pagina inicial</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#" class="btn-inCompany">In Company</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navegacao">
+            <div class="container">
+               <!-- Logotipo Fred Junco -->
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo-fred-junco.png" alt="logotipo fred junco" width="130" height="60">
+                </a>
+    
+                <!-- Botao Hamburguer que abre o offcanvas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral"
+                    aria-controls="menuLateral" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Menu no desktop -->
+                <div class="d-none d-lg-block">
+                    <ul class="navbar-nav ms-auto d-flex gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-inCompany text-white border border-white" href="#">In Company</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+    
+      <!-- Menu offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="menuLateralLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav d-flex flex-column gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-inCompany text-dark border border-dark" href="#">In Company</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
+    
 
-    <section class="banner-pagina">
-        <main class="main-banner">
-            <h1>
-                Transforme sua equipe em uma <span class="h1-verde">potência de Resultados!</span>
-            </h1>
 
-            <p>
-                Com mais de 20 anos de experiência, Fred Junco oferece treinamentos In Company que resolvem problemas
-                específicos e otimizam o desempenho da sua equipe.
-            </p>
+    <section class="banner-pagina min-vh-100">
+        <main class="container  min-vh-100 d-flex align-items-center">
+            <div class="conteudo-banner text-white">
+                <h1 class="mb-3">
+                    Transforme sua equipe em uma <span class="h1-span">potência de Resultados!</span>
+                </h1>
 
-            <a href="#" class="btn-entre-contato">Entre em contato com o Fred</a>
-        </main>
-    </section>
-
-    <section class="fundo-descricao">
-
-        <main class="container-img">
-            <img src="./img/fred-descricao.jpg" alt="fred com um terno azul">
-        </main>
-
-        <main class="descricao">
-            <div class="descricao-fred">
-                <h2>In Company</h2>
-                <p>
-                    O maior desafio do RH é garantir um ambiente de trabalho produtivo e reter talentos. Fred Junco
-                    oferece
-                    treinamentos In Company personalizados que diagnosticam as necessidades da sua empresa e apresentam
-                    soluções práticas para aumentar a produtividade, reduzir turnover e melhorar a satisfação no
-                    ambiente
-                    corporativo.
+                <p class="mb-4">
+                    Com mais de 20 anos de experiência, Fred Junco oferece treinamentos In Company que resolvem
+                    problemas
+                    específicos e otimizam o desempenho da sua equipe.
                 </p>
-                <ul>
-                    <li><i class="bi bi-people"></i>Até 200 participantes</li>
-                    <li><i class="bi bi-patch-check"></i>Garantia de Satisfação</li>
-                    <li><i class="bi bi-terminal"></i>Possiblidade On-Line</li>
-                </ul>
 
-                <a href="#">Quero me cadastrar no In Company</a>
+                <a href="#" class="btn-entre-contato text-decoration-none">Entre em contato com o Fred</a>
             </div>
         </main>
     </section>
 
-    <section class="mentoria">
 
-        <main class="container-mentoria">
-            <div class="conteudo-mentoria">
-                <h2>Mentoria Xeque-Mate</h2>
-
-                <p>
-                    A Mentoria Xeque-Mate é um programa completo focado em vendas e experiência do cliente (CX).
-                    Desenvolvida por Fred Junco, a mentoria ajuda profissionais a aprimorar estratégias, técnicas e
-                    mindset
-                    para atingir resultados extraordinários no mercado.
-                </p>
-
-                <ul>
-                    <li><i class="bi bi-check-circle-fill"></i>Para Empreendedores</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Para Líderes Comerciais</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Para Empreas que Faturam até 100% Por Mês</li>
-
-                </ul>
-                <a href="#">Quero conhecer a mentória</a>
-
+    <section class="fundo-descricao min-vh-100 container-fluid">
+        <div class="row">
+            <div class="background-img-descricao col-sm-12 col-lg-6 min-vh-100">
+                
             </div>
-        </main>
-
-        <main class="img-mentoria">
-            <img src="./img/img-xeque-mate.jpg" alt="fred com uma camisa preta">
-        </main>
-
+            <div class="col-sm-12 col-lg-6 min-vh-100 background-coluna d-flex align-items-center">
+                <main class="container w-75 d-flex flex-column gap-3">
+                    <div class="conteudo-descricao">
+                        <h2>In Company</h2>
+                        <p>
+                            O maior desafio do RH é garantir um ambiente de trabalho produtivo e reter talentos. Fred Junco
+                            oferece
+                            treinamentos In Company personalizados que diagnosticam as necessidades da sua empresa e
+                            apresentam
+                            soluções práticas para aumentar a produtividade, reduzir turnover e melhorar a satisfação no
+                            ambiente
+                            corporativo.
+                        </p>
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-people me-3 fs-2"></i>Até 200 participantes
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-patch-check me-3 fs-2"></i>Garantia de Satisfação
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-terminal me-3 fs-2"></i>Possibilidade On-Line
+                            </li>
+                        </ul>
+                        <a class="text-decoration-none w-75" href="#">Quero me cadastrar no In Company</a>
+                    </div>
+                </main>
+            </div>
+        </div>
     </section>
+
+    <section class="mentoria container-fluid min-vh-100">
+        <div class="row"> 
+            <div class="col-sm-12 col-lg-6 min-vh-100 d-flex align-items-center">
+                <main class="conteudo-mentoria container w-75 d-flex flex-column gap-3">
+                    <h2 class="fs-1">Mentoria Xeque-Mate</h2>
+    
+                    <p>
+                        A Mentoria Xeque-Mate é um programa completo focado em vendas e experiência do cliente (CX).
+                        Desenvolvida por Fred Junco, a mentoria ajuda profissionais a aprimorar estratégias, técnicas e
+                        mindset para atingir resultados extraordinários no mercado.
+                    </p>
+    
+                    <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill me-3 fs-2"></i>Para Empreendedores
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill me-3 fs-2"></i>Para Líderes Comerciais
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill me-3 fs-2"></i>Para Empresas que Faturam até 100% Por Mês
+                        </li>
+                    </ul>
+    
+                    <a class="text-decoration-none w-50" href="#">Quero conhecer a mentoria</a>
+                </main>
+            </div>
+    
+            <div class="background-img-mentoria col-lg-6 min-vh-100 p-0">
+            </div>
+        </div>
+    </section>
+    
 
     <section class="livro">
 
@@ -135,25 +197,13 @@
                 <h2>Videos do fred</h2>
                 <p>
                     Explore uma seleção de conteúdos exclusivos, incluindo palestras, vídeos e insights
-                    compartilhados
-                    por Fred Junco.
+                    compartilhados por Fred Junco.
                 </p>
             </section>
-
+    
             <section class="row g-4">
-                <div class="col-md-4 col-lg-3 col-6 text-white">
-                    <figure class="bg-img-figure">
-                        <figcaption class="text-center">
-                            <h4>Como me enganar como cliente em 7 passos</h4> 
-                            <p>05 abr de 2022</p>
-                            <a class="text-decoration-none text-white" href="#">Acesse agora<i
-                                    class="bi bi-arrow-up-right"></i></a>
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <div class="col-md-4 col-lg-3 col-6  text-white">
-                    <figure class="bg-img-figure">
+                <div class="col-12 col-md-6 col-lg-3 text-white">
+                    <figure class="bg-img-figure-1">
                         <figcaption class="text-center">
                             <h4>Como me enganar como cliente em 7 passos</h4>
                             <p>05 abr de 2022</p>
@@ -162,9 +212,9 @@
                         </figcaption>
                     </figure>
                 </div>
-
-                <div class="col-md-4 col-lg-3 col-6 text-white">
-                    <figure class="bg-img-figure">
+    
+                <div class="col-12 col-md-6 col-lg-3 text-white">
+                    <figure class="bg-img-figure-2">
                         <figcaption class="text-center">
                             <h4>Como me enganar como cliente em 7 passos</h4>
                             <p>05 abr de 2022</p>
@@ -173,9 +223,9 @@
                         </figcaption>
                     </figure>
                 </div>
-
-                <div class="col-md-4 col-lg-3 col-6 text-white">
-                    <figure class="bg-img-figure">
+    
+                <div class="col-12 col-md-6 col-lg-3 text-white">
+                    <figure class="bg-img-figure-3">
                         <figcaption class="text-center">
                             <h4>Como me enganar como cliente em 7 passos</h4>
                             <p>05 abr de 2022</p>
@@ -184,17 +234,25 @@
                         </figcaption>
                     </figure>
                 </div>
-
-  
-
+    
+                <div class="col-12 col-md-6 col-lg-3 text-white">
+                    <figure class="bg-img-figure-4">
+                        <figcaption class="text-center">
+                            <h4>Como me enganar como cliente em 7 passos</h4>
+                            <p>05 abr de 2022</p>
+                            <a class="text-decoration-none text-white" href="#">Acesse agora<i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </figcaption>
+                    </figure>
+                </div>
             </section>
-
+    
             <div class="area-btn-acesso-blog">
                 <a href="#" class="btn-acesso-blog">Acesse o blog do Fred Junco <i class="bi bi-arrow-up-right"></i></a>
             </div>
         </main>
-
     </section>
+    
 
     <section class="blog">
         <main class="container-blog">
@@ -290,37 +348,8 @@
         </main>
     </section>
 
-    <section class="pagina-InCompany">
-        <section class="container-InCompany">
-            <main class="inCompany-textos">
-                <div class="container-textosInCompany">
-                    <h2>In Company</h2>
-                    <p>
-                        O maior desafio do RH é garantir um ambiente de trabalho produtivo e reter talentos.
-                        Fred Junco
-                        oferece
-                        treinamentos In Company personalizados que diagnosticam as necessidades da sua empresa e
-                        apresentam
-                        soluções práticas para aumentar a produtividade, reduzir turnover e melhorar a
-                        satisfação no
-                        ambiente
-                        corporativo.
-                    </p>
-                    <ul>
-                        <li><i class="bi bi-people"></i>Até 200 participantes</li>
-                        <li><i class="bi bi-patch-check"></i>Garantia de Satisfação</li>
-                        <li><i class="bi bi-terminal"></i>Possiblidade On-Line</li>
-                    </ul>
 
-                    <a href="#">Quero me cadastrar no In Company</a>
-                </div>
-            </main>
 
-            <main class="inCompany-img">
-                <img src="./img/img-fred-descricao-figure.jpg" alt="">
-            </main>
-        </section>
-    </section>
 </body>
 
 </html>
