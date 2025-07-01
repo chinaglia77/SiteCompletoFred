@@ -39,6 +39,8 @@ header ul li>a {
     border-radius: 5px;
     color: #53CC6C;
     padding: 10px;
+    max-width: 300px;
+    text-align: center;
 }
 
 
@@ -62,7 +64,7 @@ header ul li>a {
 
 .conteudo-descricao {
     color: white;
-    max-width: 400px;
+    max-width: 550px;
 }
 
 .conteudo-descricao h2 {
@@ -78,12 +80,65 @@ header ul li>a {
     font-size: 15px;
     text-align: center;
     background-color: #53CC6C;
+    max-width: 300px;
 }
 
 .conteudo-descricao i {
     color: #53CC6C;
 }
 
+
+.conteudo-mentoria {
+    max-width: 550px;
+}
+
+.mentoria .background-img-mentoria {
+    background-image: url(../img/img-xeque-mate.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.mentoria h2 {
+    color: #669997;
+}
+
+.mentoria a {
+    border: #669997 1px solid;
+    padding: 13px;
+    color: #669997;
+    text-align: center;
+    border-radius: 7px;
+    max-width: 300px;
+}
+
+.mentoria i {
+    color: #C4FFD0;
+}
+
+.conteudo-livro {
+    max-width: 550px;
+}
+
+/* Livro Fred Junco */
+
+.livro {
+    background-color: #FFF8F4;
+}
+
+.livro h3 {
+    color: #E9763D;
+}
+
+.livro a {
+    color: #E9763D;
+    border: #E9763D 1px solid;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px;
+}
 
 @media (max-width: 768px) {
     .banner-pagina {
@@ -92,116 +147,21 @@ header ul li>a {
     }
 
     .banner-pagina .conteudo-banner {
-        max-width: 300px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        max-width: 500px;
     }
-    
-    .conteudo-descricao a{
-        background-color: tomato;
-        width: 10px;
+
+    .conteudo-descricao {
+
+        max-width: 500px;
     }
-}
 
-.mentoria .background-img-mentoria{
-    background-image: url(../img/img-xeque-mate.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.3s;
-}
+    .conteudo-descricao p {
+        max-width: 600px;
+    }
 
-.mentoria h2{
-    color: #669997;
-}
-
-.mentoria a{
-    border: #669997 1px solid;
-    padding: 13px;
-    color: #669997;
-    text-align: center;
-    border-radius: 7px;
-}
-
-.mentoria i{
-    color: #C4FFD0;
-}
-
-.livro {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-}
-
-.livro .descricao-livro {
-    background-color: #FFF8F4;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.livro .descricao-livro>.container-livro {
-    width: 580px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.livro .container-img-livro .fundo-colorido {
-    background-color: orangered;
-    width: 500px;
-    height: 400px;
-    margin-left: 100px;
-    border-radius: 15px;
-}
-
-.livro .container-img-livro .fundo-colorido>img {
-    width: 400px;
-    height: 500px;
-    margin-top: -100px;
-    margin-left: 50px;
-}
-
-.livro .descricao-livro .container-livro>h2 {
-    color: #e9763d;
-    font-size: 50px;
-}
-
-.livro .descricao-livro .container-livro>h3 {
-    width: 430px;
-    font-size: 25px;
-}
-
-.livro .descricao-livro .container-livro>p {
-    color: #6B6A66;
-}
-
-.livro .descricao-livro .container-livro>a {
-    text-decoration: none;
-    text-align: center;
-    border: 1px solid #e9763d;
-    color: #e9763d;
-    font-weight: 700;
-    width: 300px;
-    padding: 20px;
-    border-radius: 7px;
-}
-
-
-.livro .container-img-livro {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.livro .container-img-livro>img {
-    object-position: top;
-    object-fit: cover;
-    background-color: #e9763d;
-    width: 100%;
-    height: 100%;
 }
 
 .videos {
@@ -234,6 +194,51 @@ header ul li>a {
 .videos .container-videos .titulo>p {
     width: 450px;
     color: #6B6A66;
+}
+
+.area-btn-acesso-blog a {
+    color: #53CC6C;
+    border: #53CC6C 1px solid;
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+/* Blog */
+.blog {
+    background-color: #F5F2EC;
+}
+
+.blog figure {
+    border-radius: 7px 7px 7px 7px;
+    max-height: 700px;
+}
+
+.blog figure img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.blog figure figcaption {
+    padding: 20px;
+    color: white;
+    height: 140px;
+    color: black;
+}
+
+.blog figure figcaption .conteudo-figcaption p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.blog figure a {
+    color: #53CC6C;
+
 }
 
 /* sessao card videos aqui-=-=-= */
@@ -306,10 +311,6 @@ header ul li>a {
     border-radius: 15px;
 }
 
-.area-btn-acesso-blog {
-    display: flex;
-    justify-content: center;
-}
 
 @media screen and (max-width: 767px) {
     .videos .container-videos .titulo>h2 {
@@ -332,249 +333,60 @@ header ul li>a {
 
 }
 
-.container-videos .btn-acesso-blog {
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid #53CC6C;
-    color: #53CC6C;
-    width: 300px;
-    padding: 20px;
-    border-radius: 7px;
-}
-
-.blog {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F5F2EC;
-}
-
-.blog .container-blog {
-    width: 1300px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.blog .container-blog .titulo-blog {
-    display: flex;
-    color: #fff;
-    align-items: center;
-}
-
-.blog .container-blog .titulo-blog>h2 {
-    margin-right: 20px;
-    color: #000;
-    font-size: 30px;
-}
-
-.blog .container-blog .titulo-blog>p {
-    width: 500px;
-    color: #6B6A66;
-}
-
-.grid-blog {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-blog figure {
-    width: 400px;
-    height: 420px;
-    background-color: #fff;
-    border-radius: 10px;
-
-}
-
-.grid-blog figure>img {
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.grid-blog figure figcaption {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 10px;
-    padding: 0px 20px;
-    height: 90px;
-}
-
-.grid-blog figure figcaption>h2 {
-    font-size: 20px;
-}
-
-.grid-blog figure figcaption>a {
-    text-decoration: none;
-    color: #53CC6C;
-    font-weight: 500;
-}
-
-.container-blog .btn-acesso-blog {
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid #53CC6C;
-    color: #53CC6C;
-    width: 300px;
-    padding: 20px;
-    border-radius: 7px;
-}
-
-.container-blog .container-btn {
-    display: flex;
-    justify-content: center;
-}
-
 /* Pagina Sobre */
 
-.sobre {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-}
-
-.sobre .sobre-fred {
-    width: 100%;
-    height: 100%;
-}
-
-.sobre .container-img-sobre {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.sobre .container-img-sobre>img {
+.conteudo-img {
+    background: url(../img/img-fred-com-mao-junta.jpg);
     width: 500px;
     height: 500px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin-right: 50px;
+    border-radius: 12px;
+
+    background-position: center;
+    background-size: cover;
 }
 
-.sobre .sobre-fred {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.sobre .conteudo-textos{
+    max-width: 440px;
+    background-color: tomato;
 }
 
-.sobre .sobre-fred .textos-sobre {
-    width: 700px;
-    height: 310px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.sobre .background-imagem-sobre{
+    background: url(../img/img-fred-com-mao-junta.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 800px;
+    height: 800px;
+    border-radius: 12px;
 }
 
-.sobre .sobre-fred .textos-sobre>h2 {
-    font-size: 30px;
-    color: #1C3433;
-}
-
-.sobre .sobre-fred .textos-sobre>h3 {
-    color: #1C3433;
-}
-
-.sobre .sobre-fred .textos-sobre>p {
-    width: 550px;
-    color: #6B6A66;
-}
-
-.sobre .sobre-fred .textos-sobre>a {
-    text-decoration: none;
-    text-align: center;
-    width: 320px;
-    padding: 12px;
+.sobre a{
     color: #53CC6C;
-    border: 1px solid #53CC6C;
-    border-radius: 7px;
-}
-
-.empresas {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.empresas .empresas-trabalho {
+    border: #53CC6C 1px solid;
+    padding: 10px;
+    max-width: 350px;
     text-align: center;
-    align-items: center;
-    width: 700px;
-}
-
-.empresas .empresas-trabalho>h2 {
-    font-size: 40px;
-}
-
-.empresas .empresas-trabalho>p {
-    font-size: 20px;
-    padding: 10px;
-    color: #6B6A66;
-}
-
-.empresas .empresas-trabalho>.icon-empresas {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+    border-radius: 7px;
     padding: 10px;
 }
 
-.empresas .empresas-trabalho>.icon-empresas2 {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    margin-top: 10px;
+.in-company h2,
+.in-company i {
+    color: #53CC6C;
 }
 
-
-.pagina-InCompany {
-    height: 100vh;
-    background-color: tomato;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.conteudo-descricao{
+    background-color: #2B2D3D;
 }
 
-.pagina-InCompany .container-InCompany {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 20px;
-    height: 700px;
-    width: 1400px;
-    background-color: yellow;
-}
-
-.pagina-InCompany .pg1 {
-    background-color: green;
-    width: 50%;
-}
-
-.pagina-InCompany .descricao-company {
-    background-color: pink;
-}
-
-
-.pagina-InCompany .container-img-inCompany {
-    background-color: red;
-    width: 50%;
-}
-
-.pagina-InCompany .container-img-inCompany>img {
+.in-company img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
-.box {
-    width: 500px;
-    height: 500px;
-    background-color: tomato;
+section .conteudo {
+  height: 700px; /* ou min-height: 600px; */
 }
